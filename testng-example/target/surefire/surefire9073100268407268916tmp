@@ -1,0 +1,5 @@
+#surefire
+#Fri Feb 22 11:15:18 CST 2019
+user.dir=/Users/didi/Documents/code/testng-example
+localRepository=/Users/didi/.m2/repository
+basedir=/Users/didi/Documents/code/testng-example

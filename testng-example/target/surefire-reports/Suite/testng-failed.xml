@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.myProject.retry.TestngListener"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.myProject.testcase.testOrder1">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.myProject.testcase.testOrder1 -->
+      <class name="com.myProject.testcase.testOrder2">
+        <methods>
+          <include name="beforeMthod"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="z"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.myProject.testcase.testOrder2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

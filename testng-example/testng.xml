@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+    <listeners>
+        <listener class-name="com.myProject.retry.TestngListener"></listener>
+    </listeners>
+
+    <!--preserve-order定义执行顺序，其他的执行顺序配置请看ppt-->
+    <test name="Test" preserve-order="true">
+        <classes>
+            <class name="com.myProject.testcase.testOrder2"  ></class>
+
+            <class name="com.myProject.testcase.testOrder1" >
+            <methods>
+            <include name="printOrder1" ></include>
+            <exclude name="testDataprovider_1"></exclude>
+            <exclude name="printlning"></exclude>
+            </methods>
+            </class>
+
+        </classes>
+    </test>
+
+</suite>
